@@ -552,7 +552,6 @@ html.ie .scroll-custom {
   width: 95%;
   margin: 0 auto;
   padding: 0 16px;
-  border: 1px solid #000;
 }
 
 .panel {
@@ -562,3 +561,49 @@ html.ie .scroll-custom {
 }
 
 /* =================== main =================== */
+.resume-section {
+  padding: 50px 0;
+  border: 1px solid #000;
+}
+.resume-section .external-link {
+  text-decoration: underline;
+  color: #db0007;
+  text-underline-position: under;
+}
+.resume-section .section-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume-section .section-sub-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.resume-section .section-list {
+  margin-bottom: 5px;
+}
+.resume-section .section-list .section-txt {
+  font-size: 16px;
+  font-weight: 400;
+}
+.resume-section .section-list-2 .section-txt-2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.section-list-2 {
+  position: relative;
+  padding-left: 10px;
+}
+.section-list-2::before {
+  content: "•";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  color: #db0007;
+}
+
+.signiture-dot {
+  color: #db0007;
+  font-size: 40px;
+}

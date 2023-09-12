@@ -1,1 +1,58 @@
 /* =================== main =================== */
+// common
+.resume-section {
+  padding: 50px 0; // temp
+  border: 1px solid #000;
+
+  .external-link {
+    text-decoration: underline;
+    color: #db0007;
+    text-underline-position: under;
+  }
+
+  .section-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .section-sub-title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .section-list {
+    margin-bottom: 5px;
+
+    .section-txt {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .section-list-2 {
+    .section-txt-2 {
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+}
+
+.section-list-2 {
+  position: relative;
+
+  &::before {
+    content: "•";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    color: #db0007;
+  }
+
+  padding-left: 10px; // temp
+}
+
+.signiture-dot {
+  color: #db0007;
+  font-size: 40px; // temp
+}

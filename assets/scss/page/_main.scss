@@ -13,7 +13,19 @@
   .section-title {
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 14px; // temp
+  }
+
+  .section-item-group {
+    margin-bottom: 10px; // temp
+  }
+
+  .section-sub-title-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 10px 0 15px;
+    gap: 10px;
   }
 
   .section-sub-title {
@@ -21,38 +33,85 @@
     font-weight: 500;
   }
 
+  .icon-link-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .section-sub-period {
+    font-size: 14px;
+    color: #808080;
+    padding-bottom: 2px;
+  }
+
+  .section-thumb-group {
+    margin-bottom: 20px;
+    width: 100%;
+
+    .prj-thumbnail-img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .section-list-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
   .section-list {
+    position: relative;
     margin-bottom: 5px;
+    padding-left: 10px; // temp
+    line-height: 1.5;
+
+    &::before {
+      content: "•";
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      color: #db0007;
+    }
 
     .section-txt {
       font-size: 16px;
       font-weight: 400;
     }
   }
-
-  .section-list-2 {
-    .section-txt-2 {
-      font-size: 15px;
-      font-weight: 400;
-    }
-  }
-}
-
-.section-list-2 {
-  position: relative;
-
-  &::before {
-    content: "•";
-    z-index: 1;
-    position: absolute;
-    left: 0;
-    color: #db0007;
-  }
-
-  padding-left: 10px; // temp
 }
 
 .signiture-dot {
   color: #db0007;
   font-size: 40px; // temp
+}
+
+// 소개 섹션
+.introduce-section {
+  .introduce-info-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 20px;
+    margin-bottom: 10px;
+
+    .introduce-img-group {
+      overflow: hidden;
+      width: 30%;
+      border-radius: 10px;
+
+      .introduce-img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .code-block-info {
+      border: 1px solid #000;
+      flex-grow: 1;
+      padding: 10px; // temp
+    }
+  }
 }

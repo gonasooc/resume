@@ -16,6 +16,38 @@
     margin-bottom: 14px; // temp
   }
 
+  .company-group {
+    margin-bottom: 10px;
+
+    &.type-nondev {
+      .type-company {
+        padding: 6px 0 10px;
+
+        .section-sub-title {
+          font-size: 20px;
+        }
+
+        .section-job-position {
+          font-size: 16px;
+        }
+
+        .section-sub-period {
+          font-size: 12px;
+        }
+      }
+
+      .section-sub-title-group {
+        padding: 6px 0 10px;
+      }
+
+      .section-item-group {
+        .section-sub-title {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
   .section-item-group {
     margin-bottom: 10px; // temp
   }
@@ -26,10 +58,22 @@
     align-items: flex-end;
     padding: 10px 0 15px;
     gap: 10px;
+
+    &.type-company {
+      .section-sub-title {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .section-job-position {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
   }
 
   .section-sub-title {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
   }
 

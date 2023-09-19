@@ -16,7 +16,7 @@
     <meta name="author" content="최관수" />
     <meta
       name="description"
-      content="3년차 퍼블리셔이자 프론트엔드 개발자를 지망하는 최관수의 이력서"
+      content="3년차 퍼블리셔이자 프론트엔드 개발자로 성장하고 있는 최관수의 이력서"
     />
     <meta
       name="keywords"
@@ -29,7 +29,7 @@
     <meta property="og:title" content="이력서 - 최관수" />
     <meta
       property="og:description"
-      content="3년차 퍼블리셔이자 프론트엔드 개발자를 지망하는 최관수의 이력서"
+      content="3년차 퍼블리셔이자 프론트엔드 개발자로 성장하고 있는 최관수의 이력서"
     />
     <!-- ! favicon: full size: 800*800 / content size: 600*315 -->
     <meta property="og:image" content="./assets/images/favicon/og.png" />
@@ -38,7 +38,7 @@
     <meta property="twitter:title" content="이력서 - 최관수" />
     <meta
       property="twitter:description"
-      content="3년차 퍼블리셔이자 프론트엔드 개발자를 지망하는 최관수의 이력서"
+      content="3년차 퍼블리셔이자 프론트엔드 개발자로 성장하고 있는 최관수의 이력서"
     />
     <!-- END Open Graph -->
 
@@ -144,14 +144,26 @@
   <body>
     <div id="app">
       <div id="page" class="main-page">
+        <div id="darkmodeGroup" class="darkmode-group">
+          <input
+            id="darkModeCheckBox"
+            class="dark-mode-check is-none"
+            type="checkbox"
+          />
+          <label for="darkModeCheckBox" class="dark-mode-label"
+            ><i class="icon dark-mode-icon"></i
+          ></label>
+        </div>
         <!-- content -->
         <div class="page-container">
           <div class="l-center">
             <!-- 소개 섹션 -->
             <section class="resume-section introduce-section">
               <h2 class="section-title type-multiline">
-                집요한 덕력을 개발에,<br />비즈니스에 집중하는 프론트엔드
-                개발자<span class="signiture-dot">.</span>
+                집요한 덕력을 개발에,<br />비즈니스에 집중하는 개발자<span
+                  class="signiture-dot"
+                  >.</span
+                >
               </h2>
               <div class="introduce-info-group">
                 <div class="introduce-img-group">
@@ -162,7 +174,7 @@
                   />
                 </div>
                 <!-- is-dark class binding 시 다크모드 -->
-                <pre class="code-block-info">
+                <pre class="code-block">
 <code class="code">
   <code class="code keyword">const</code> <code class="code var">GONASOOC</code> <code class="code key">=</code> <code class="code block">{</code> 
     <code class="code key">name:</code> "<code class="code value">최관수</code>",
@@ -172,12 +184,14 @@
     <code class="code key">email: </code>"<code class="code value"><a href="mailto:gonasoo.dev@gmail.com">doupler@gmail.com</a></code>",
     <code class="code key">phone: </code>"<code class="code value"><a href="tel:01025489908">01025489908</a></code>",
   <code class="code block">}</code>
+  
+  <code class="code-cursor"></code>
 </code>
                 </pre>
               </div>
               <div class="section-sub-title-group">
                 <h3 class="section-sub-title">
-                  3년차 퍼블리셔이자 <br />프론트엔드 개발자를 지망하는
+                  3년차 퍼블리셔이자 <br />프론트엔드 개발자로 성장하고 있는
                   최관수입니다.
                 </h3>
               </div>
@@ -275,7 +289,7 @@
               </h2>
               <div class="section-item-group">
                 <div class="section-sub-title-group">
-                  <h3 class="section-sub-title">Language</h3>
+                  <h3 class="section-sub-title">Front-End</h3>
                 </div>
                 <ul class="section-list-group">
                   <li class="section-list">
@@ -285,19 +299,6 @@
                       있습니다.
                     </p>
                   </li>
-                  <li class="section-list">
-                    <p class="section-txt">
-                      빅데이터 분석 교육 과정을 통해 Python과 Java를 짧게나마
-                      경험해 본 바 있습니다.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="section-item-group">
-                <div class="section-sub-title-group">
-                  <h3 class="section-sub-title">Front-End</h3>
-                </div>
-                <ul class="section-list-group">
                   <li class="section-list">
                     <p class="section-txt">
                       Vue 2 기반의 퍼블리싱 업무를 진행했고, 주체적으로 컴포넌트
@@ -1573,7 +1574,7 @@
     </div>
     <script src="./assets/js/vendor/swiper.min.js"></script>
     <script src="./assets/js/vendor/aos.js"></script>
-    <!-- <script src="./assets/js/custom/ui.js"></script> -->
+    <script src="./assets/js/custom/ui.js"></script>
     <script>
       // FIXME: AOS init 선언: 사용 시 주석 해제, 미사용 시 삭제
       // AOS.init({

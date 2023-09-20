@@ -292,6 +292,9 @@ html.ie .scroll-custom {
 }
 
 /* ========== icon 관련 스타일 ========== */
+.main-page.is-dark .icon-mobile {
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='272.225' height='448.326' viewBox='0 0 272.225 448.326'%3E%3Cg id='free-icon-smartphone-2739899' transform='translate(-119.775 480.101)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M156.1-478.4a49.122,49.122,0,0,0-34.6,35.1c-2.3,8.6-2.3,366,0,374.6a48.933,48.933,0,0,0,35,35.2c8.9,2.3,190.1,2.3,199,0a48.933,48.933,0,0,0,35-35.2c1.3-5,1.5-29.6,1.5-187.3,0-159.8-.2-182.3-1.5-187.5a48.933,48.933,0,0,0-35.2-35C346.9-480.7,164.3-480.6,156.1-478.4Zm28.3,33.9c.8,4.3,5,9.4,9.3,11.1,4.8,2,119.8,2,124.6,0,4.3-1.8,8.5-6.8,9.3-11.2l.7-3.6,10.8.4c11.6.3,13.9,1.2,18.3,7.2l2.1,2.7V-74.1l-2.1,2.7a27.258,27.258,0,0,1-4.8,4.8c-2.7,2.1-3.4,2.1-96.6,2.1s-93.9,0-96.6-2.1a27.259,27.259,0,0,1-4.8-4.8l-2.1-2.7-.3-179.2c-.1-98.6,0-180.6.3-182.4.7-4,4.9-9.1,9-10.9,1.8-.8,6.9-1.3,12.6-1.4h9.7Z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E");
+}
 .main-page.is-dark .icon-extenal-link {
   background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='511.776' height='511.627' viewBox='0 0 511.776 511.627'%3E%3Cg id='다운로드' transform='translate(-0.139 511.767)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M303.9-510.4c-6.4,1.9-14.1,9-16.9,15.6a28.181,28.181,0,0,0,7.2,32.3c8.4,7.6,7.9,7.5,67.7,7.5h52.6L295.3-335.8C163.5-203.9,171-212.2,171-199a28.048,28.048,0,0,0,40,25.4c4.8-2.2,21.3-18.2,124.8-121.7L455-414.5v52.6c0,59.8-.1,59.3,7.5,67.7,11.5,12.8,30.5,12.7,42,0,7.9-8.8,7.6-3.6,7.3-106.4l-.3-90.9-2.2-4.1c-3.4-6.3-6.6-9.7-12.5-12.9l-5.3-3-91.5-.2C322.8-511.9,307.8-511.7,303.9-510.4Z' fill='%23fff'/%3E%3Cpath id='패스_2' data-name='패스 2' d='M70.5-453.9A86.928,86.928,0,0,0,8.7-407.3a98.505,98.505,0,0,0-5.4,14L.5-384.5.2-232C0-127.5.3-77.3,1-72.6,3.9-53.9,11.3-39.7,25.5-25.5S53.9-3.9,72.6-1c4.7.7,54.9,1,159.4.8L384.5-.5l8.8-2.8c32.5-10.1,54.8-35.3,60.6-68.1.7-3.8,1.1-29.4,1.1-69.2,0-60.8-.1-63.5-2-68.6a28.417,28.417,0,0,0-26.6-18c-11,.1-19.8,5.5-25.2,15.7l-2.7,5L398-142l-.5,64.5-2.3,4.7a36.7,36.7,0,0,1-6.8,8.7C379.7-56.5,391.7-57,228-57c-166.4,0-153.1.7-162.3-8.3C56.2-74.5,57-60,57-227.5c0-164.2-.5-152.2,7.1-160.9a36.7,36.7,0,0,1,8.7-6.8l4.7-2.3,64-.5,64-.5,5.2-2.4c13.8-6.2,20.4-23.1,14.4-36.7-3-6.8-9.4-13-15.9-15.4-5.1-1.9-7.7-2-69.5-1.9C104.4-454.8,73.3-454.4,70.5-453.9Z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E");
 }
@@ -309,6 +312,12 @@ html.ie .scroll-custom {
   background-repeat: no-repeat;
 }
 
+.icon-mobile {
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='512.000000pt' height='512.000000pt' viewBox='0 0 512.000000 512.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)'%0Afill='%23000000' stroke='none'%3E%3Cpath d='M1561 4784 c-169 -45 -301 -180 -346 -351 -23 -86 -23 -3660 0 -3746%0A45 -173 178 -307 350 -352 89 -23 1901 -23 1990 0 172 45 305 179 350 352 13%0A50 15 296 15 1873 0 1598 -2 1823 -15 1875 -45 172 -179 305 -352 350 -84 22%0A-1910 21 -1992 -1z m283 -339 c8 -43 50 -94 93 -111 48 -20 1198 -20 1246 0%0A43 18 85 68 93 112 l7 36 108 -4 c116 -3 139 -12 183 -72 l21 -27 0 -1819 0%0A-1819 -21 -27 c-11 -15 -33 -37 -48 -48 -27 -21 -34 -21 -966 -21 -932 0 -939%0A0 -966 21 -15 11 -37 33 -48 48 l-21 27 -3 1792 c-1 986 0 1806 3 1824 7 40%0A49 91 90 109 18 8 69 13 126 14 l97 0 6 -35z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 .icon-extenal-link {
   width: 16px;
   height: 16px;
@@ -322,8 +331,8 @@ html.ie .scroll-custom {
 }
 
 .icon-document {
-  width: 18px;
-  height: 20px;
+  width: 20px;
+  height: 17px;
   background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='512.000000pt' height='512.000000pt' viewBox='0 0 512.000000 512.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)'%0Afill='%23000000' stroke='none'%3E%3Cpath d='M955 5106 c-84 -21 -147 -57 -211 -121 -65 -65 -105 -136 -123 -223%0A-16 -76 -16 -4329 0 -4404 37 -172 175 -310 347 -347 75 -16 3108 -16 3184 0%0A170 36 311 178 347 347 8 38 11 545 11 1748 0 1532 -2 1698 -16 1727 -22 44%0A-1220 1244 -1266 1268 -36 18 -68 19 -1130 18 -839 -1 -1105 -4 -1143 -13z%0Am2055 -681 c0 -256 4 -413 11 -447 37 -172 175 -310 347 -347 34 -7 191 -11%0A447 -11 l395 0 0 -1600 c0 -1585 0 -1601 -20 -1640 -13 -26 -34 -47 -60 -60%0A-39 -20 -56 -20 -1571 -20 l-1531 0 -40 22 c-24 14 -48 38 -59 60 -18 36 -19%0A95 -19 2180 1 2044 2 2145 19 2177 10 18 35 44 57 57 l39 24 993 0 992 0 0%0A-395z m699 -503 c-275 -2 -281 -2 -321 20 -75 42 -78 58 -78 380 l0 283 340%0A-340 340 -340 -281 -3z'/%3E%3Cpath d='M1588 2979 c-43 -22 -78 -81 -78 -129 0 -50 35 -107 80 -130 38 -20%0A57 -20 970 -20 913 0 932 0 970 20 45 23 80 80 80 130 0 50 -35 107 -80 130%0A-38 20 -56 20 -972 20 -909 -1 -934 -1 -970 -21z'/%3E%3Cpath d='M1588 2379 c-43 -22 -78 -81 -78 -129 0 -50 35 -107 80 -130 38 -20%0A57 -20 970 -20 913 0 932 0 970 20 45 23 80 80 80 130 0 50 -35 107 -80 130%0A-38 20 -56 20 -972 20 -909 -1 -934 -1 -970 -21z'/%3E%3Cpath d='M1588 1779 c-43 -22 -78 -81 -78 -129 0 -50 35 -107 80 -130 38 -20%0A57 -20 970 -20 913 0 932 0 970 20 45 23 80 80 80 130 0 50 -35 107 -80 130%0A-38 20 -56 20 -972 20 -909 -1 -934 -1 -970 -21z'/%3E%3Cpath d='M1588 1179 c-43 -22 -78 -81 -78 -129 0 -50 35 -107 80 -130 38 -19%0A58 -20 670 -20 612 0 632 1 670 20 45 23 80 80 80 130 0 50 -35 107 -80 130%0A-38 19 -57 20 -672 20 -610 -1 -634 -2 -670 -21z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -389,6 +398,9 @@ html.ie .scroll-custom {
 
 .main-page.is-dark .resume-section .external-link {
   color: #ecc48d;
+}
+.main-page.is-dark .resume-section .external-link:hover {
+  color: #f5f5dc;
 }
 .main-page.is-dark .darkmode-group:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -507,11 +519,16 @@ html {
   text-decoration: underline;
   color: #db0007;
   text-underline-position: under;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.resume-section .external-link:hover {
+  color: #ff99cc;
 }
 .resume-section .section-title {
   position: relative;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 25px;
   line-height: 0.8;
   padding-left: 15px;
@@ -608,45 +625,43 @@ html {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 10px 0 15px;
-  gap: 10px;
+  gap: 6px 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media all and (max-width: 600px) {
   .resume-section .section-sub-title-group {
     padding: 6px 0 10px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 6px;
-  }
-  .resume-section .section-sub-title-group .section-sub-title {
-    width: 100%;
+    gap: 4px 6px;
   }
 }
 .resume-section .section-sub-title-group.type-company .section-sub-title {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .resume-section .section-sub-title-group.type-company .section-job-position {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 .resume-section .section-sub-title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.4;
 }
 .resume-section .icon-link-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 5px;
 }
 .resume-section .section-sub-period {
+  width: 100%;
   font-size: 14px;
   color: #808080;
   padding-bottom: 2px;
@@ -664,7 +679,7 @@ html {
   margin-bottom: 16px;
 }
 .resume-section .section-list-title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   margin-bottom: 10px;
 }

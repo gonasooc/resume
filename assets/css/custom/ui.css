@@ -291,244 +291,6 @@ html.ie .scroll-custom {
   scrollbar-track-color: #023474;
 }
 
-/* =================== button =================== */
-.btn {
-  border-radius: 0;
-  background-color: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-.btn:disabled {
-  background-color: gray;
-  cursor: default;
-}
-
-.btn-sm {
-  height: 30px;
-}
-
-.btn-md {
-  height: 50px;
-}
-
-.btn-lg {
-  height: 70px;
-}
-
-.btn-full {
-  width: 100%;
-  height: 100%;
-}
-
-.btn-primary {
-  background-color: #db0007;
-  color: #191919;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.btn-primary:hover, .btn-primary:focus {
-  background-color: transparent;
-  border: 1px solid #db0007;
-}
-
-.btn-secondary {
-  background-color: #023474;
-  color: #191919;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.btn-secondary:hover, .btn-secondary:focus {
-  background-color: transparent;
-  border: 1px solid #023474;
-}
-
-.btn-gray-55 {
-  color: #191919;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.btn-gray-55:hover, .btn-gray-55:focus {
-  background-color: transparent;
-  border: 1px solid;
-}
-
-.btn-bd-primary {
-  border: 1px solid #db0007;
-  background-color: white;
-  color: #db0007;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.btn-bd-primary:hover, .btn-bd-primary:focus {
-  background-color: #db0007;
-  color: #191919;
-}
-
-.btn-bd-secondary {
-  border: 1px solid #023474;
-  background-color: white;
-  color: #023474;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.btn-bd-secondary:hover, .btn-bd-secondary:focus {
-  background-color: #023474;
-  color: #191919;
-}
-
-.btn-bd-gray-55 {
-  border: 1px solid;
-  background-color: white;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.btn-bd-gray-55:hover, .btn-bd-gray-55:focus {
-  color: #191919;
-}
-
-.btn-gst-primary {
-  border: 1px solid #db0007;
-  color: #db0007;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.btn-gst-primary:hover, .btn-gst-primary:focus {
-  background-color: #db0007;
-  color: #191919;
-}
-
-.btn-gst-secondary {
-  border: 1px solid #023474;
-  color: #023474;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.btn-gst-secondary:hover, .btn-gst-secondary:focus {
-  background-color: #023474;
-  color: #191919;
-}
-
-.btn-gst-gray-55 {
-  border: 1px solid;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.btn-gst-gray-55:hover, .btn-gst-gray-55:focus {
-  color: #191919;
-}
-
-.btn-kakao {
-  background-color: #fae300;
-  color: #ffffff;
-}
-
-.btn-facebook {
-  background-color: #204889;
-  color: #ffffff;
-}
-
-.btn-naver {
-  background-color: #00bf19;
-  color: #ffffff;
-}
-
-.btn-kakao {
-  color: #2b1718;
-}
-
-.btn-icon {
-  border-radius: 0;
-  background-color: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-}
-
-/* =================== form =================== */
-.input-wrap {
-  width: 100%;
-}
-
-.input {
-  border-radius: 0;
-  background-color: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  display: block;
-  width: 100%;
-  height: 50px;
-  padding: 0 17px;
-  border-radius: 6px;
-  background-color: white;
-  font-size: 18px;
-  border: 1px solid;
-}
-.input:hover, .input:focus {
-  border-color: #db0007;
-}
-.input::-webkit-input-placeholder {
-  opacity: 0.7;
-}
-.input::-moz-placeholder {
-  opacity: 0.7;
-}
-.input:-ms-input-placeholder {
-  opacity: 0.7;
-}
-.input::-ms-input-placeholder {
-  opacity: 0.7;
-}
-.input::placeholder {
-  opacity: 0.7;
-}
-.input.input-tarea {
-  width: 100%;
-  height: 500px;
-  padding: 20px;
-  border: 1px solid;
-  border-radius: 6px;
-  resize: none;
-}
-.input.input-round {
-  border: 1px solid;
-  border-radius: 25px;
-}
-.input.input-underbar {
-  border-bottom: 1px solid;
-}
-
 /* ========== icon 관련 스타일 ========== */
 .main-page.is-dark .icon-extenal-link {
   background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='511.776' height='511.627' viewBox='0 0 511.776 511.627'%3E%3Cg id='다운로드' transform='translate(-0.139 511.767)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M303.9-510.4c-6.4,1.9-14.1,9-16.9,15.6a28.181,28.181,0,0,0,7.2,32.3c8.4,7.6,7.9,7.5,67.7,7.5h52.6L295.3-335.8C163.5-203.9,171-212.2,171-199a28.048,28.048,0,0,0,40,25.4c4.8-2.2,21.3-18.2,124.8-121.7L455-414.5v52.6c0,59.8-.1,59.3,7.5,67.7,11.5,12.8,30.5,12.7,42,0,7.9-8.8,7.6-3.6,7.3-106.4l-.3-90.9-2.2-4.1c-3.4-6.3-6.6-9.7-12.5-12.9l-5.3-3-91.5-.2C322.8-511.9,307.8-511.7,303.9-510.4Z' fill='%23fff'/%3E%3Cpath id='패스_2' data-name='패스 2' d='M70.5-453.9A86.928,86.928,0,0,0,8.7-407.3a98.505,98.505,0,0,0-5.4,14L.5-384.5.2-232C0-127.5.3-77.3,1-72.6,3.9-53.9,11.3-39.7,25.5-25.5S53.9-3.9,72.6-1c4.7.7,54.9,1,159.4.8L384.5-.5l8.8-2.8c32.5-10.1,54.8-35.3,60.6-68.1.7-3.8,1.1-29.4,1.1-69.2,0-60.8-.1-63.5-2-68.6a28.417,28.417,0,0,0-26.6-18c-11,.1-19.8,5.5-25.2,15.7l-2.7,5L398-142l-.5,64.5-2.3,4.7a36.7,36.7,0,0,1-6.8,8.7C379.7-56.5,391.7-57,228-57c-166.4,0-153.1.7-162.3-8.3C56.2-74.5,57-60,57-227.5c0-164.2-.5-152.2,7.1-160.9a36.7,36.7,0,0,1,8.7-6.8l4.7-2.3,64-.5,64-.5,5.2-2.4c13.8-6.2,20.4-23.1,14.4-36.7-3-6.8-9.4-13-15.9-15.4-5.1-1.9-7.7-2-69.5-1.9C104.4-454.8,73.3-454.4,70.5-453.9Z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E");
@@ -694,15 +456,6 @@ html {
 .darkmode-group {
   position: fixed;
   left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   right: 5px;
   top: 15px;
   width: 36px;
@@ -718,13 +471,23 @@ html {
   background-color: rgba(0, 0, 0, 0.05);
 }
 .darkmode-group .dark-mode-label {
-  display: block;
-  width: 60%;
-  height: 60%;
-}
-.darkmode-group .dark-mode-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.darkmode-group .dark-mode-icon {
+  width: 60%;
+  height: 60%;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   -webkit-transition: all 0.3s;

@@ -18,8 +18,8 @@ window.onload = function () {
   }
 };
 
-$darkModeCheckBox.addEventListener("click", (e) => {
-  if (e.target.checked) {
+$darkModeCheckBox.addEventListener("click", (event) => {
+  if (event.target.checked) {
     localStorage.setItem("color-theme", "dark");
     document.documentElement.setAttribute("color-theme", "dark");
     $page.classList.add("is-dark");

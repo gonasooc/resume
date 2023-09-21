@@ -396,6 +396,10 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
+.main-page.is-dark .global-code {
+  background-color: #1c2025;
+  border-color: rgba(47, 58, 70, 0.6);
+}
 .main-page.is-dark .resume-section .external-link {
   color: #ecc48d;
 }

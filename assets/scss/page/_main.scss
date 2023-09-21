@@ -20,7 +20,7 @@
 }
 
 :root[color-theme="dark"] {
-  --backgroundColor: #000;
+  --backgroundColor: #121212;
   --textColor: #ececec;
   transition: all 0.3s;
 }
@@ -83,10 +83,23 @@
   }
 }
 
-// common
 html {
   background-color: var(--backgroundColor);
   color: var(--textColor);
+}
+
+// common
+.bold-txt {
+  font-weight: 600;
+}
+
+.global-code {
+  font-family: "Consolas", "Monaco", monospace;
+  background-color: #f3f6f9;
+  font-size: 13px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #dae2ed;
 }
 
 .main-page {
@@ -110,6 +123,7 @@ html {
 }
 
 .darkmode-group {
+  z-index: 1;
   position: fixed;
   left: auto;
   right: 5px;
@@ -239,6 +253,8 @@ html {
       }
 
       .section-item-group {
+        padding: 2px 0 10px;
+
         .section-sub-title {
           font-size: 16px;
 
@@ -278,19 +294,19 @@ html {
 
     &.type-company {
       .section-sub-title {
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 700;
       }
 
       .section-job-position {
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 300;
       }
     }
   }
 
   .section-sub-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 1.4;
   }
@@ -311,7 +327,11 @@ html {
 
   .section-thumb-group {
     margin-bottom: 16px;
-    width: 100%;
+    width: 70%;
+
+    @include mobile {
+      width: 100%;
+    }
 
     .prj-thumbnail-img {
       width: 100%;
@@ -335,7 +355,7 @@ html {
 
   .section-list {
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     padding-left: 10px;
     line-height: 1.5;
 
@@ -381,11 +401,11 @@ html {
 
     .introduce-img-group {
       overflow: hidden;
-      width: 30%;
+      width: 240px;
       border-radius: 10px;
 
       @include mobile {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         width: 100%;
       }
 

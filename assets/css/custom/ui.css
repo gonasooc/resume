@@ -390,7 +390,7 @@ html.ie .scroll-custom {
 }
 
 :root[color-theme=dark] {
-  --backgroundColor: #000;
+  --backgroundColor: #121212;
   --textColor: #ececec;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -444,6 +444,19 @@ html {
   color: var(--textColor);
 }
 
+.bold-txt {
+  font-weight: 600;
+}
+
+.global-code {
+  font-family: "Consolas", "Monaco", monospace;
+  background-color: #f3f6f9;
+  font-size: 13px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #dae2ed;
+}
+
 .main-page {
   padding: 20px 0;
 }
@@ -466,6 +479,7 @@ html {
 }
 
 .darkmode-group {
+  z-index: 1;
   position: fixed;
   left: auto;
   right: 5px;
@@ -594,6 +608,9 @@ html {
     padding: 4px 0 6px;
   }
 }
+.resume-section .company-group.type-nondev .section-item-group {
+  padding: 2px 0 10px;
+}
 .resume-section .company-group.type-nondev .section-item-group .section-sub-title {
   font-size: 16px;
 }
@@ -636,15 +653,15 @@ html {
   }
 }
 .resume-section .section-sub-title-group.type-company .section-sub-title {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
 }
 .resume-section .section-sub-title-group.type-company .section-job-position {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
 }
 .resume-section .section-sub-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -668,7 +685,12 @@ html {
 }
 .resume-section .section-thumb-group {
   margin-bottom: 16px;
-  width: 100%;
+  width: 70%;
+}
+@media all and (max-width: 600px) {
+  .resume-section .section-thumb-group {
+    width: 100%;
+  }
 }
 .resume-section .section-thumb-group .prj-thumbnail-img {
   width: 100%;
@@ -690,7 +712,7 @@ html {
 }
 .resume-section .section-list {
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   padding-left: 10px;
   line-height: 1.5;
 }
@@ -738,12 +760,12 @@ html {
 }
 .introduce-section .introduce-info-group .introduce-img-group {
   overflow: hidden;
-  width: 30%;
+  width: 240px;
   border-radius: 10px;
 }
 @media all and (max-width: 600px) {
   .introduce-section .introduce-info-group .introduce-img-group {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     width: 100%;
   }
 }

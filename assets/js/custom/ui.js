@@ -3,6 +3,8 @@ const $darkModeCheckBox = document.querySelector("#darkModeCheckBox");
 const isUserColorTheme = localStorage.getItem("color-theme");
 const $darkmodeGroup = document.querySelector("#darkmodeGroup");
 const $page = document.querySelector("#page");
+const $progressBar = document.querySelector("#progressBar");
+
 let touchStartY = null; // 터치 이벤트 관련 변수
 let isVisible = true; // 다크모드 버튼 관련 변수
 
@@ -93,4 +95,15 @@ document.addEventListener("touchmove", (event) => {
 document.addEventListener("touchend", () => {
   // 터치 시작 지점 초기화
   touchStartY = null;
+});
+
+// 스크롤 값에 따른 프로그레스바 처리
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const totalScrollHeight =
+    document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercentage = (scrollY / totalScrollHeight) * 100;
+
+  // 동적 변경
+  $progressBar.style.width = scrollPercentage + "%";
 });

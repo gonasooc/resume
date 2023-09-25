@@ -75,14 +75,14 @@ document.addEventListener("touchmove", (event) => {
     if (deltaY > 0) {
       // 아래로 스크롤
       if (isVisible) {
-        $darkmodeGroup.classList.add("is-hide");
-        isVisible = false;
+        $darkmodeGroup.classList.remove("is-hide");
+        isVisible = true;
       }
     } else if (deltaY < 0) {
       // 위로 스크롤
       if (!isVisible) {
-        $darkmodeGroup.classList.remove("is-hide");
-        isVisible = true;
+        $darkmodeGroup.classList.add("is-hide");
+        isVisible = false;
       }
     }
 

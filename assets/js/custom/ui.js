@@ -61,42 +61,6 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-// 터치 스크롤 이벤트 처리
-document.addEventListener("touchstart", (event) => {
-  // 터치 시작 지점을 기록
-  touchStartY = event.touches[0].clientY;
-});
-
-document.addEventListener("touchmove", (event) => {
-  if (touchStartY !== null) {
-    const touchEndY = event.touches[0].clientY;
-    const deltaY = touchEndY - touchStartY;
-
-    if (deltaY > 0) {
-      // 아래로 스크롤
-      if (isVisible) {
-        $darkmodeGroup.classList.remove("is-hide");
-        isVisible = true;
-      }
-    } else if (deltaY < 0) {
-      // 위로 스크롤
-      if (!isVisible) {
-        $darkmodeGroup.classList.add("is-hide");
-        isVisible = false;
-      }
-    }
-
-    // 터치 시작 지점을 업데이트
-    touchStartY = touchEndY;
-  }
-});
-
-// 터치 종료 이벤트 처리
-document.addEventListener("touchend", () => {
-  // 터치 시작 지점 초기화
-  touchStartY = null;
-});
-
 // 스크롤 값에 따른 프로그레스바 처리
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
@@ -107,3 +71,39 @@ window.addEventListener("scroll", () => {
   // 동적 변경
   $progressBar.style.width = scrollPercentage + "%";
 });
+
+// FIXME: 터치 스크롤 이벤트 추후 조정
+// document.addEventListener("touchstart", (event) => {
+//   // 터치 시작 지점을 기록
+//   touchStartY = event.touches[0].clientY;
+// });
+
+// document.addEventListener("touchmove", (event) => {
+//   if (touchStartY !== null) {
+//     const touchEndY = event.touches[0].clientY;
+//     const deltaY = touchEndY - touchStartY;
+
+//     if (deltaY > 0) {
+//       // 아래로 스크롤
+//       if (isVisible) {
+//         $darkmodeGroup.classList.remove("is-hide");
+//         isVisible = true;
+//       }
+//     } else if (deltaY < 0) {
+//       // 위로 스크롤
+//       if (!isVisible) {
+//         $darkmodeGroup.classList.add("is-hide");
+//         isVisible = false;
+//       }
+//     }
+
+//     // 터치 시작 지점을 업데이트
+//     touchStartY = touchEndY;
+//   }
+// });
+
+// // 터치 종료 이벤트 처리
+// document.addEventListener("touchend", () => {
+//   // 터치 시작 지점 초기화
+//   touchStartY = null;
+// });

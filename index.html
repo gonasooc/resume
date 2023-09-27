@@ -141,21 +141,11 @@
   </head>
 
   <body>
-    <div id="app">
+    <div id="app" class="app">
       <div id="page" class="main-page">
-        <div id="darkmodeGroup" class="darkmode-group">
-          <input
-            id="darkModeCheckBox"
-            class="dark-mode-check is-none"
-            type="checkbox"
-          />
-          <label for="darkModeCheckBox" class="dark-mode-label"
-            ><i class="icon dark-mode-icon"></i
-          ></label>
-        </div>
         <!-- content -->
         <div class="page-container">
-          <div class="l-center">
+          <div id="divToPrint" class="l-center">
             <!-- 소개 섹션 -->
             <section class="resume-section introduce-section">
               <h2 class="section-title type-multiline">
@@ -1693,10 +1683,34 @@
         <div id="progressBar" class="progress-bar"></div>
         <!-- END Progress-bar -->
       </div>
+      <div id="fixedBtnWrapper" class="fixed-btn-wrapper">
+        <div class="fixed-btn-group pdf-save-group">
+          <button type="button" class="pdf-save-btn" onclick="downloadPdf();">
+            <i class="icon pdf-save-icon"></i>
+          </button>
+        </div>
+        <div id="darkmodeGroup" class="fixed-btn-group darkmode-group">
+          <input
+            id="darkModeCheckBox"
+            class="dark-mode-check is-none"
+            type="checkbox"
+          />
+          <label for="darkModeCheckBox" class="dark-mode-label"
+            ><i class="icon dark-mode-icon"></i
+          ></label>
+        </div>
+      </div>
+      <div id="spinnerWrapper" class="spinner-wrapper">
+        <div class="loading-spinner"></div>
+      </div>
       <!-- END page -->
     </div>
     <script src="./assets/js/vendor/aos.js"></script>
+    <script src="./assets/js/vendor/html2canvas.min.js"></script>
+    <script src="./assets/js/vendor/jspdf.min.js"></script>
+
     <script src="./assets/js/custom/ui.js"></script>
+    <script src="./assets/js/custom/pdf.js"></script>
     <script>
       // FIXME: AOS init 선언: 사용 시 주석 해제, 미사용 시 삭제
       // AOS.init({

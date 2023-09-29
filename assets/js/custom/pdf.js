@@ -16,7 +16,7 @@ function downloadPdf() {
   html2canvas(divToPrint, {
     allowTaint: true,
     useCORS: true,
-    scale: 2,
+    scale: 1.5,
   }).then((canvas) => {
     // 캔버스를 이미지로 변환
     let imgData = canvas.toDataURL("image/png");

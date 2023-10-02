@@ -877,6 +877,7 @@ html {
   }
 }
 .introduce-section .introduce-info-group .introduce-img-group .introduce-img {
+  display: block !important;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

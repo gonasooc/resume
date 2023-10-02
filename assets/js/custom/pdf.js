@@ -19,7 +19,7 @@ function downloadPdf() {
     scale: 1.5,
   }).then((canvas) => {
     // 캔버스를 이미지로 변환
-    let imgData = canvas.toDataURL("image/png");
+    let imgData = canvas.toDataURL("image/jpeg");
     let imgWidth = 190; // 이미지 가로 길이(mm) / A4 기준 210mm
     let pageHeight = imgWidth * 1.414; // 출력 페이지 세로 길이 계산 A4 기준
     let imgHeight = (canvas.height * imgWidth) / canvas.width;
@@ -29,7 +29,7 @@ function downloadPdf() {
     let position = 10;
 
     // 첫 페이지 출력
-    doc.addImage(imgData, "PNG", margin, position, imgWidth, imgHeight);
+    doc.addImage(imgData, "JPEG", margin, position, imgWidth, imgHeight);
     heightLeft -= pageHeight;
 
     // 한 페이지 이상일 경우 루프 돌면서 출력
@@ -37,12 +37,12 @@ function downloadPdf() {
       position = heightLeft - imgHeight;
       position = position - 20;
       doc.addPage();
-      doc.addImage(imgData, "PNG", margin, position, imgWidth, imgHeight);
+      doc.addImage(imgData, "JPEG", margin, position, imgWidth, imgHeight);
       heightLeft -= pageHeight;
     }
 
     // 파일 저장
-    doc.save("기술이력서_최관수.pdf");
+    doc.save("기술이력서_프론트엔드_최관수.pdf");
     loadingSpinner.style.display = "none";
   });
 }
